@@ -3,13 +3,28 @@
 \documentclass[a4paper,grid,frame]{flashcards}
 \usepackage[utf8]{inputenc}
 
+% Activate for output of the plugin versions in the log file
+%\listfiles
+% Documentation for flashcard package can be found here: https://ctan.org/pkg/flashcards?lang=de
+
+% ----------- card FRONT style -----------
+% Set card front style
 \cardfrontstyle[\large\slshape]{headings}
+% -- Set front HEADER style --
+%\cardfrontheadstyle[\small\itshape]{center}
+% -- Set front FOOTER style --
+%\cardfrontfootstyle[\small\itshape]{center}
+
+% ----------- card BACK style -----------
+% Set card back style
 \cardbackstyle{empty}
 
-\listfiles
+% ----------- card content margin -----------
+%\setlength{\cardmargin}{2mm}
 
+
+% ----- start of document -----
 \begin{document}
-
+% Include the flashcards file which includes the actual content
 \input{flashcards}
-
 \end{document}
